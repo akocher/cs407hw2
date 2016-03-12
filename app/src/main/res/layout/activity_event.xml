@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eventScreen">
+
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:id="@+id/backToCalendar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@drawable/ic_add_white_18dp"
+        app:borderWidth="2dp"
+        app:fabSize="normal"
+        android:onClick="submit"
+        app:rippleColor="@color/colorPrimaryDark">
+
+    </android.support.design.widget.FloatingActionButton>-->
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:id="@+id/addEvent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/backToCalendar"
+        android:layout_toStartOf="@+id/backToCalendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/eventDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/addEvent"
+        android:layout_toStartOf="@+id/addEvent"
+        android:layout_alignBottom="@+id/addEvent" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateContent"
+        android:layout_below="@+id/eventDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </ListView>
+
+</RelativeLayout>
